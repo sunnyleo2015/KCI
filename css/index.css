@@ -1,0 +1,198 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    border: none;
+    z-index: 0;
+}
+
+.clearfix:after{
+    clear:both;
+    display:block;
+    visibility:hidden;
+    height:0;
+    line-height:0;
+    content:'';
+}
+.clearfix {
+    zoom: 1;
+}
+
+.row {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+body{
+    width: 100%;
+    min-height: 800px;
+    margin: 0;
+    overflow: hidden;
+}
+
+#WebGL{
+    position: absolute;
+    left: 200px;
+    top:0;
+}
+
+#3dCube {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#3dFrame {
+    cursor: pointer;
+    background-color: #EEEEEE;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+}
+
+#controllerBorad{
+    display: block;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+#label-position-list {
+    position: fixed;
+    right: 15px;
+    bottom: 0;
+    background: #000;
+    color: #fff;
+    padding: 10px 5px;
+    margin: 0;
+    width: 310px;
+    max-height: 300px;
+    overflow: auto;
+    cursor: default;
+    z-index: 100;
+}
+
+
+#label-position-list li {
+    padding: 3px 5px;
+}
+
+#label-position-list li .name {
+    display: inline-block;
+    width: 60px;
+    overflow: hidden;
+}
+
+#label-position-list li .position {
+    display: inline-block;
+    padding-left: 10px;
+    width: 63px;
+    overflow: hidden;
+}
+
+.button-list{
+    position: absolute;
+    display: block;
+    top: 50px;
+    width: 320px;
+    height: calc(100vh - 50px);
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #0e0e0e;
+    color: #ffffff;
+}
+
+.button-list label{
+    font-weight: bold;
+    margin: 20px 0 10px 0;
+}
+
+#reset-camera{
+    display: block;
+    background: #f2f2f2;
+    color: #000;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.localizer-list{
+    width: 300px;
+    max-height: 300px;
+    margin: 0;
+    padding: 15px;
+    box-sizing: border-box;
+    cursor: default;
+    overflow: scroll;
+    border: 1px solid;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.localizer-list .name {
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.localizer-list .position {
+    padding: 5px;
+    color: #fff;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.open-window {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.add-wall-window{
+
+}
+
+.add-wall-window label {
+    font-weight: bold;
+    margin: 0;
+}
+
+.add-wall-window input{
+    width: 70px;
+    margin: 0 10px;
+    border: 1px solid #f0f0f0;
+    padding: 2px 8px;
+}
+
+.add-wall-window >div {
+    width: 400px;
+    margin: auto;
+}
+
+.add-wall-window label{
+    padding: 10px 0;
+}
+
+#wall-control-window {
+    margin: 20px 0;
+}
+
+.position-input {
+    float: left;
+}
+
+#wall-control-window .position-input span{
+    padding: 5px;
+}
+
+.wall-list input[type=checkbox]{
+    margin: 15px 15px 0;
+}
+
+.wall-list span{
+    margin: 0 10px;
+}
